@@ -12,11 +12,11 @@ const ele_bairro = document.getElementById("bairro");
 const ele_cidade = document.getElementById("cidade");
 const ele_estado = document.getElementById("estado");
 
-
 // Monitor de eventos: acionar quando qualquer edição for feita no CEP (apagando ou escrevendo) //
 ele_cep.addEventListener('input', api_busca_cep);
 ele_cep.addEventListener('propertychange', api_busca_cep);
 
+// Corrigir CEP e executar API //
 function api_busca_cep() {
 
   // Substituir qualquer coisa que não seja número por nada //
@@ -29,29 +29,5 @@ function api_busca_cep() {
     // Inserir no formulário o CEP formatado com "-" //
     ele_cep.value = cep[0] + cep[1] + cep[2] + cep[3] + cep[4] + "-" + cep[5] + cep[6] + cep[7];
 
-
-    var url = 'https://viacep.com.br/ws/' + cep[0] + cep[1] + cep[2] + cep[3] + cep[4] + cep[5] + cep[6] + cep[7] + '/json'
-    var request = new XMLHttpRequest()
-    request.open('GET', url)
-    request.onerror = function (e) {
-      alert("API OFFLINE ou CEP INVÁLIDO")
-    }
-
-    request.onload = () => {
-      alert(request.responseText)
-      var response = JSON.parse(request.responseText)
-      
-      if (response.erro === true) {
-        alert("CEP NÃO ENCONTRADO")
-      } else {
-        alert("OK")
-        ele_rua.value = response.logradouro
-        ele_bairro.value = response.bairro
-        ele_cidade.value = response.localidade
-        ele_estado.value = response.uf
-      }
-
-
-    }
   }
 }
