@@ -1,3 +1,3 @@
-function dois(valor){
-  alert("Função 1")
-}
+function teste_2(){
+  alert("SCRIPT 2");
+  }

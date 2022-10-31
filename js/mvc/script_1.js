@@ -1,4 +1,3 @@
-function nova(){
-  alert("Função 1");
-  dois()
+function teste_1(){
+  alert("SCRIPT 1");
   }

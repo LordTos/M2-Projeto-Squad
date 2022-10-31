@@ -6,7 +6,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  
   <link rel="stylesheet" href="./css/style_formulario.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   </script>
@@ -29,69 +28,62 @@
                 <form>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="nome" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example1cg">Seu nome</label>
+                    <input placeholder="Seu nome" type="text" id="nome" class="form-control form-control-lg" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="rg" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example1cg">RG</label>
+                    <input placeholder="RG" type="text" id="rg" class="form-control form-control-lg" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="email" id="email" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example3cg">Seu Email</label>
+                    <input placeholder="Seu Email" type="email" id="email" class="form-control form-control-lg" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="password" id="senha" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example4cg">Senha</label>
+                    <input placeholder="Senha" type="password" id="senha" class="form-control form-control-lg" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="password" id="repetir_senha" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example4cdg">Repetir a senha</label>
+                    <input placeholder="Repetir a senha" type="repetir_senha" id="form3Example4cdg"
+                      class="form-control form-control-lg" />
                   </div>
 
                   <br>
                   <br>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="cep" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example1cg">CEP</label>
+                    <input placeholder="CEP" type="text" id="cep" class="form-control form-control-lg" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="rua" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example1cg">Rua</label>
+                    <input placeholder="Rua" type="text" id="rua" class="form-control form-control-lg" disabled="disabled"/>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="numero" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example1cg">Número</label>
+                    <input placeholder="Número" type="text" id="numero" class="form-control form-control-lg" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="complemento" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example1cg">Complemento (opcional)</label>
+                    <input placeholder="Complemento (opcional)" type="text" id="complemento"
+                      class="form-control form-control-lg" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="bairro" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example1cg">Bairro</label>
+                    <input placeholder="Bairro" type="text" id="bairro" class="form-control form-control-lg" disabled="disabled"/>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="cidade" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example1cg">Cidade</label>
+                    <input placeholder="Cidade" type="text" id="cidade" class="form-control form-control-lg" disabled="disabled"/>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="estado" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example1cg">Estado</label>
+                    <input placeholder="Estado" type="text" id="estado" class="form-control form-control-lg" disabled="disabled"/>
                   </div>
 
                   <br>
+
+
+
 
                   <div class="d-flex justify-content-center">
                     <button id="close-message  save-btn" type="button submit"
@@ -102,10 +94,6 @@
                   <p class="text-center text-muted mt-5 mb-0">Já tem uma conta? <a href="#!"
                       class="fw-bold text-body"><u>Login</u></a></p>
               </div>
-
-
-
-
               </form>
 
             </div>
@@ -121,8 +109,10 @@
 
 
 
-  
-  <script src="./js/code_formulario.js"></script>
+  <script src="./js/mvc/controllers_formulario.js"></script>
+  <script src="./js/mvc/views_formulario.js"></script>
+  <script src="./js/mvc/models_formulario.js"></script>
+
 </body>
 
 </html>
