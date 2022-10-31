@@ -47,10 +47,21 @@ function cep_alterado() {
 function button() {
     if (pegar_valor(ele_nome) == "" || pegar_valor(ele_rg) == "" || pegar_valor(ele_email) == "" || pegar_valor(ele_senha) == "") {
         alert("Confira os seus dados pessoais");
+        return
     }
     if (pegar_valor(ele_senha) != pegar_valor(ele_repetir_senha)) {
         alert("Senhas não conferem")
+        return
     }
+
+alert(`
+${pegar_valor(ele_nome)}
+${pegar_valor(ele_rg)}
+${pegar_valor(ele_email)}
+${pegar_valor(ele_senha)}
+${pegar_valor(ele_repetir_senha)}
+`)
+
 }
 
 
