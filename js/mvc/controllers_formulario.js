@@ -38,7 +38,24 @@ function cep_alterado() {
         let cep_ok = cep[0] + cep[1] + cep[2] + cep[3] + cep[4] + "-" + cep[5] + cep[6] + cep[7];
         consultar_cep(pegar_valor(ele_cep));
         imputar_valor(ele_cep, cep_ok);
-        lista_de_espera("TESTE");
+        
+        let inf = `Nome: ${pegar_valor(ele_nome)}
+        RG: ${pegar_valor(ele_rg)}
+        Email: ${pegar_valor(ele_email)}
+        Senha: ${pegar_valor(ele_senha)}
+        Repetir senha: ${pegar_valor(ele_repetir_senha)}
+        
+        ######
+        
+        CEP: ${pegar_valor(ele_cep)}
+        Rua: ${pegar_valor(ele_rua)}
+        Número: ${pegar_valor(ele_numero)}
+        Complemento: ${pegar_valor(ele_complemento)}
+        Bairro: ${pegar_valor(ele_bairro)}
+        Cidade: ${pegar_valor(ele_cidade)}
+        Estado: ${pegar_valor(ele_estado)}`
+        alert(inf)
+        lista_de_espera("123");
     }
 }
 
