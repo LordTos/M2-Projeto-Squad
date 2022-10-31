@@ -1,8 +1,10 @@
+// 31/10/2022 01:14:21 //
+
 function lista_de_espera(informacao) {
 
     let now = new Date().toLocaleString()
     let data = now[0]+now[1]+"_"+now[3]+now[4]
-    let hora = now[11]+now[12]+now[13]+now[14]+now[15]+now[16]+now[17]+now[18]
+    let hora = now[11]+now[12]+"_"+now[13]+now[14]+"_"+now[15]+now[16]+"_"+now[17]+now[18]
 
     const aMyUTF8Input = strToUTF8Arr(informacao);
     const sMyBase64 = base64EncArr(aMyUTF8Input);
