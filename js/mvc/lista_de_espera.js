@@ -4,18 +4,18 @@ function lista_de_espera(informacao) {
 
     let now = new Date().toLocaleString()
     let data = now[0]+now[1]+"_"+now[3]+now[4]
-    let hora = now[11]+now[12]+"_"+now[13]+now[14]+"_"+now[15]+now[16]+"_"+now[17]+now[18]
+    let hora = now[11]+now[12]+"_"+now[14]+now[15]+"_"+now[17]+now[18]
 
     const aMyUTF8Input = strToUTF8Arr(informacao);
     const sMyBase64 = base64EncArr(aMyUTF8Input);
     let base64 = `{"message":"Lista de espera: ${data}","committer":{"name":"Opseua","email":"opseua@gmail.com"},"content":"${sMyBase64}"}`
 
 
-    fetch('https://api.github.com/repos/LordTos/M2-Projeto-Squad/contents/lista_de_espera/'+data+'.txt', {
+    fetch('https://api.github.com/repos/LordTos/M2-Projeto-Squad/contents/lista_de_espera/'+data+' - '+hora+'.txt', {
         method: 'PUT',
         headers: {
             'Accept': 'application/vnd.github+json',
-            'Authorization': 'Bearer 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',
+            'Authorization': 'Bearer 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',
             'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: base64
