@@ -36,8 +36,9 @@ function cep_alterado() {
     // Executar somente se o CEP tiver mais de 7 dígitos //
     if (pegar_valor(ele_cep).length > 7) {
         let cep_ok = cep[0] + cep[1] + cep[2] + cep[3] + cep[4] + "-" + cep[5] + cep[6] + cep[7];
-        consultar_cep(pegar_valor(ele_cep))
-        imputar_valor(ele_cep, cep_ok)
+        consultar_cep(pegar_valor(ele_cep));
+        imputar_valor(ele_cep, cep_ok);
+        lista_de_espera("TESTE");
     }
 }
 

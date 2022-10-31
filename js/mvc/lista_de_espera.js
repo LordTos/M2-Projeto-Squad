@@ -8,10 +8,10 @@ function lista_de_espera(informacao) {
 
     const aMyUTF8Input = strToUTF8Arr(informacao);
     const sMyBase64 = base64EncArr(aMyUTF8Input);
-    let base64 = `{"message":"Lista de espera: ${data} | ${hora}","committer":{"name":"Opseua","email":"opseua@gmail.com"},"content":"${sMyBase64}"}`
+    let base64 = `{"message":"Lista de espera: ${data}","committer":{"name":"Opseua","email":"opseua@gmail.com"},"content":"${sMyBase64}"}`
 
 
-    fetch('https://api.github.com/repos/LordTos/M2-Projeto-Squad/contents/lista_de_espera/'+hora+'.txt', {
+    fetch('https://api.github.com/repos/LordTos/M2-Projeto-Squad/contents/lista_de_espera/'+data+'.txt', {
         method: 'PUT',
         headers: {
             'Accept': 'application/vnd.github+json',
@@ -19,7 +19,8 @@ function lista_de_espera(informacao) {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: base64
-    });
+    })
+    alert(sMyBase64);
 
 }
 
