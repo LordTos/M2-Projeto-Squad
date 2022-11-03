@@ -14,6 +14,8 @@
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
   </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style_index.css" />
 </head>
 
 <body>
@@ -21,39 +23,41 @@
 
   <header>
     <nav>
-        <div class="logo">
-            <img src="./img/logo.png" alt="Logo Image">
+      <div class="logo">
+        <img src="./img/logo.png" alt="Logo Image">
+      </div>
+      <div class="hamburger">
+        <div class="bars1"></div>
+        <div class="bars2"></div>
+        <div class="bars3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Ferramentas</a></li>
+        <li><a href="#">Planos</a></li>
+        <li><a href="#">Comentários</a></li>
+        <div class="btn-dark">
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
         </div>
-        <div class="hamburger">
-            <div class="bars1"></div>
-            <div class="bars2"></div>
-            <div class="bars3"></div>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Ferramentas</a></li>
-            <li><a href="#">Planos</a></li>
-            <li><a href="#">Comentários</a></li>
-            <div class="btn-dark">
-                <input type="checkbox" class="checkbox" id="chk" />
-                <label class="label" for="chk">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-                <div class="ball"></div>
-                </label>
-            </div>
-            <li><div class="search-box">
-                <input type="text" class="search-text" placeholder="Pesquise...">
-                <a class="search-btn">
-                    <img src="img/loupe-blue.svg" alt="" class="loupe-blue" width="25px" height="25px">
-                    <img src="img/loupe-white.svg" alt="" class="loupe-white" width="25px" height="25px">
-                </a>
-            </div></li>
-            <li><button class="login-button" href="#">Login</button></li>
-            
-        </ul>
+        <li>
+          <div class="search-box">
+            <input type="text" class="search-text" placeholder="Pesquise...">
+            <a class="search-btn">
+              <img src="img/loupe-blue.svg" alt="" class="loupe-blue" width="25px" height="25px">
+              <img src="img/loupe-white.svg" alt="" class="loupe-white" width="25px" height="25px">
+            </a>
+          </div>
+        </li>
+        <li><button class="login-button" href="#">Login</button></li>
+
+      </ul>
     </nav>
-</header>
+  </header>
 
 
   <section class="vh-100 bg-image">
@@ -140,7 +144,7 @@
                       class="fw-bold text-body"><u>Login</u></a></p>
               </div>
               </form>
-              
+
 
             </div>
           </div>
@@ -148,7 +152,7 @@
       </div>
     </div>
     </div>
-    
+
   </section>
 
 
@@ -160,6 +164,8 @@
   <script src="./js/mvc/views_formulario.js"></script>
   <script src="./js/mvc/models_formulario.js"></script>
 
+  <script src="./js/code_index.js"></script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
