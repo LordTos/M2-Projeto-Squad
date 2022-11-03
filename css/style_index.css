@@ -234,9 +234,10 @@ nav{
   }
 
 /*CARDS DA CATEGORIAS*/
-.categorias{
+.categorias, .ferramentas{
     margin-left: 20%;
 }
+
 .container {
     width: 1150px;
     padding: 20px;
