@@ -12,9 +12,3 @@ hamburger.addEventListener('click', ()=>{
     //Animation
     hamburger.classList.toggle("toggle");
 });
-
-const chk = document.getElementById('chk')
-
-chk.addEventListener('change', () => {
-  document.body.classList.toggle('dark')
-});
