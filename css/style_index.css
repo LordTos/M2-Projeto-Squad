@@ -1,6 +1,5 @@
 *{
     margin:0; padding:0;
-    color:#f2f5f7;
     font-family: sans-serif;
     letter-spacing: 1px;
     font-weight: 300;
@@ -105,6 +104,7 @@ nav{
     text-decoration: none;
     transition: all ease-in-out 350ms;
     padding: 10px;
+    color:#f2f5f7;
 }
 
 .nav-links li a:hover{
@@ -196,6 +196,7 @@ nav{
     background-color: transparent;
     border:1.5px solid #f2f5f7;
     border-radius: 2em;
+    color:#f2f5f7;
 }
 
 .login-button:hover{
@@ -219,6 +220,16 @@ nav{
     display: none;
 }
 
+.conteudo{
+    padding-top: 150px;
+    padding-left: 50px;
+    
+    
+}
+
+.rodape{
+    margin-top: auto;
+}
 
 /*Responsive Adding Media Queries*/
 

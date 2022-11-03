@@ -7,45 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style_index.css" />
-    <title> Responsive Navigation Bar | Multiwebpress </title>
+    <title> DEV : Iniciante </title>
 </head>
 
 <body>
-
-    <nav>
-        <div class="logo">
-            <img src="./img/logo.png" alt="Logo Image">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo Image">
+            </div>
+            <div class="hamburger">
+                <div class="bars1"></div>
+                <div class="bars2"></div>
+                <div class="bars3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Ferramentas</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Comentários</a></li>
+                <div class="btn-dark">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                    </label>
+                </div>
+                <li><div class="search-box">
+                    <input type="text" class="search-text" placeholder="Pesquise...">
+                    <a class="search-btn">
+                        <img src="img/loupe-blue.svg" alt="" class="loupe-blue" width="25px" height="25px">
+                        <img src="img/loupe-white.svg" alt="" class="loupe-white" width="25px" height="25px">
+                    </a>
+                </div></li>
+                <li><button class="login-button" href="#">Login</button></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section class="conteudo">
+        <div class="img01">
+            <img src="img/01.jpg" alt="imagem 01">
         </div>
-        <div class="hamburger">
-            <div class="bars1"></div>
-            <div class="bars2"></div>
-            <div class="bars3"></div>
+        <div>
+            <h1>DEV: Iniciante</h1>
+            <h3>DEV:In é um site voltado para iniciantes desenvolvedores de páginas web!</h3>
+            <p>Aqui você encontrará conteúdos de HTML, CSS e Java Script de maneira mais fácil e obejtiva! <br> Videos aulas, tutoriais, arquivos e além de ferramentas que todo desenvolvedor web precisa saber.</p>
         </div>
-        <ul class="nav-links">
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Ferramentas</a></li>
-            <li><a href="#">Planos</a></li>
-            <li><a href="#">Comentários</a></li>
-            <div class="btn-dark">
-                <input type="checkbox" class="checkbox" id="chk" />
-                <label class="label" for="chk">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                  <div class="ball"></div>
-                </label>
-              </div>
-            <li><div class="search-box">
-                <input type="text" class="search-text" placeholder="Pesquise...">
-                <a class="search-btn">
-                    <img src="img/loupe-blue.svg" alt="" class="loupe-blue" width="25px" height="25px">
-                    <img src="img/loupe-white.svg" alt="" class="loupe-white" width="25px" height="25px">
-                </a>
-            </div></li>
-            <li><button class="login-button" href="#">Login</button></li>
-            
-        </ul>
-       
-    </nav>
+    </section>
+    <footer class="rodape">
+        
+    </footer>
     
 <script src="./js/code_index.js"></script>
 <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
