@@ -227,6 +227,12 @@ nav{
     
 }
 
+.hr4 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+  }
+
 /*CARDS DA CATEGORIAS*/
 .categorias{
     margin-left: 20%;
