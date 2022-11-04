@@ -1,28 +1,28 @@
+body{
+    background: linear-gradient( 135deg,
+    #ee20d6 0%,
+    #0a2fb6 100%);
+}
+
 section {
     
     padding-top: 150px;
     padding-left: 50px;
-    background: linear-gradient( 217deg,
-    rgb(143, 7, 197),
-    rgb(131, 6, 180),
-    rgb(125, 13, 170),
-    rgb(109, 10, 148),
-    rgb(143, 7, 130),
-    rgb(143, 7, 120)
-                          );
 
 
 }
 
 .oferta h1{
+    color: #fff;
     font-size: 43px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
     padding-bottom: 30px;
-    border-color: black;
+    border-color: rgb(255, 254, 254);
     text-align: center;
 }
 .oferta p {
+    color: #fff;
     padding-top: 10px;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +38,7 @@ section {
 }
 
 .segundo{
-    color: #000000;
+    color: #ffffff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
     border-radius: 10px;
@@ -57,7 +57,7 @@ section {
 }
 .segundo:hover{
     cursor: pointer;
-    color: #000000;
+    color: #ffffff;
     background: rgb(88, 88, 221);
     font-size: 15px;
     text-decoration: underline;
@@ -74,13 +74,14 @@ section {
  h6{
     text-align: center;
     padding-bottom: 10px;
+    color: #fff;
 }
 
 .porque{
-    background: #f2f5f7;
+  
 }
 .porque h1{
-    color: #000;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -107,10 +108,9 @@ aside{
     position: relative;
     width: 160px;
     height: 220px;
-    background: rgba(71, 20, 71, 0.452);
-    border-radius: 20px;
+    border-radius: 200px;
     overflow:hidden;
-    color: #000000;
+    color: #fffefe;
     
 }
 
@@ -119,7 +119,8 @@ img {padding-top: 15px;
     height:100%;
     max-width: 150px;
     max-height: 90px;
-    border-radius: 29%;
+    border-radius: 80%;
+   
 }
 
 .container{
@@ -137,9 +138,6 @@ img {padding-top: 15px;
     height: 400px;
     padding: 10px 0;
     text-align: center;
-    background: linear-gradient( 135deg,
-   #ee20d6 0%,
-   #0a2fb6 100%);
    border-radius: 15px;
    box-shadow: 2px 5px 15px black;
    transition: transform 0.3s;
@@ -196,16 +194,15 @@ transform: scale(1.050);
 }
 
 .planos{
-    background: linear-gradient( 135deg,
-   #ad20ee 0%,
-   #4d2ebe 100%);
+
 }
 .escolha{
     text-align: center;
+    color: #fff;
     
 }
 .escolha h2{
-    color:#000;
+    color:rgb(255, 255, 255);
     padding-top: 20px;
     font-size: 32px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -216,7 +213,7 @@ transform: scale(1.050);
     padding-bottom: 20px;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
+    color: #f7f7f7;
 }
 .container .card .card-content button a {
     text-decoration: none;
