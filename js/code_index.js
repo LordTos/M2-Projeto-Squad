@@ -2,6 +2,8 @@ const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
+
+
 hamburger.addEventListener('click', ()=>{
    //Links
     navLinks.classList.toggle("open");
@@ -17,4 +19,11 @@ const chk = document.getElementById('chk')
 
 chk.addEventListener('change', () => {
   document.body.classList.toggle('dark')
+
+
+  document.getElementById("container").classList.toggle('dark')
+
+  
+
+
 });
