@@ -1,5 +1,6 @@
 // Identificar elementos do HTML //
 const ele_nome = document.getElementById("nome");
+const ele_sobrenome = document.getElementById("sobrenome");
 const ele_rg = document.getElementById("rg");
 const ele_email = document.getElementById("email");
 const ele_senha = document.getElementById("senha");
@@ -11,6 +12,7 @@ const ele_complemento = document.getElementById("complemento");
 const ele_bairro = document.getElementById("bairro");
 const ele_cidade = document.getElementById("cidade");
 const ele_estado = document.getElementById("estado");
+const ele_referencia = document.getElementById("referencia");
 
 
 
@@ -31,8 +33,6 @@ function corrigir_cep() {
 }
 
 // Validar se o CEP está no padrão correto //
-
-
 
 
 

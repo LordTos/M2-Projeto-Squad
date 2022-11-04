@@ -66,58 +66,104 @@
         <div class="blo_form" id="blo_form">
 
             <div class="container" id="container">
+
                 <div class="title">Entrar para lista de espera</div>
                 <div class="content">
                     <form action="#">
                         <div class="user-details">
                             <div class="input-box">
-                                <span class="details" id="nome">Nome</span>
-                                <input type="text" placeholder="Seu nome" required>
+                                <span class="details">Nome</span>
+                                <input type="text" id="nome" placeholder="Seu nome" required>
                             </div>
                             <div class="input-box">
-                                <span class="details" id="sobrenome">Sobrenome</span>
-                                <input type="text" placeholder="Seu sobrenome" required>
+                                <span class="details">Sobrenome</span>
+                                <input type="text" id="sobrenome" placeholder="Seu sobrenome" required>
                             </div>
                             <div class="input-box">
-                                <span class="details" id="rg">RG</span>
-                                <input type="text" placeholder="Seu RG" required>
+                                <span class="details">RG</span>
+                                <input type="text" id="rg" placeholder="Seu RG" required>
                             </div>
                             <div class="input-box">
-                                <span class="details" id="email">Email</span>
-                                <input type="text" placeholder="Seu email" required>
+                                <span class="details">Email</span>
+                                <input type="text" id="email" placeholder="Seu email" required>
                             </div>
-                            <div class="input-box" id="senha">
+                            <div class="input-box">
                                 <span class="details">Senha</span>
-                                <input type="password" placeholder="Sua senha" required>
+                                <input type="password" id="senha" placeholder="Sua senha" required>
                             </div>
-                            <div class="input-box" id="repetir_senha">
+                            <div class="input-box">
                                 <span class="details">Repetir senha</span>
-                                <input type="password" placeholder="Repetir sua senha" required>
+                                <input type="password" id="repetir_senha" placeholder="Repetir sua senha" required>
                             </div>
                         </div>
-                        <div class="gender-details">
-                            <input type="radio" name="gender" id="dot-1">
-                            <input type="radio" name="gender" id="dot-2">
-                            <input type="radio" name="gender" id="dot-3">
-                            <span class="gender-title">Plano</span>
+
+                        <div class="plano-details">
+                            <input type="radio" name="plano" id="dot-1" value="bronze" required>
+                            <input type="radio" name="plano" id="dot-2" value="ouro" required>
+                            <span class="plano-title">Plano</span>
                             <div class="category">
                                 <label for="dot-1">
                                     <span class="dot one"></span>
-                                    <span class="gender">BRONZE</span>
+                                    <span class="plano">BRONZE</span>
                                 </label>
                                 <label for="dot-2">
                                     <span class="dot two"></span>
-                                    <span class="gender">OURO</span>
+                                    <span class="plano">OURO</span>
                                 </label>
                             </div>
                         </div>
+
+                        <div class="plano-details">
+                            <span class="plano-title">Endereço</span>
+                        </div>
+
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">CEP</span>
+                                <input type="text" id="cep" placeholder="Seu CEP" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Rua</span>
+                                <input type="text" id="rua" placeholder="Sua rua (automático)" disabled="disabled">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Número</span>
+                                <input type="text" id="numero" placeholder="Seu número" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Complemento</span>
+                                <input type="text" id="complemento" placeholder="Seu complemento (opcional)">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Bairro</span>
+                                <input type="text" id="bairro" placeholder="Seu bairro (automático)"
+                                    disabled="disabled">
+                            </div>
+                            <div class="input-box" id="cidade">
+                                <span class="details">Cidade</span>
+                                <input type="text" placeholder="Sua cidade (automático)" disabled="disabled">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Estado</span>
+                                <input type="text" id="estado" placeholder="Seu estado (automático)"
+                                    disabled="disabled">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Referência</span>
+                                <input type="text" id="referencia" placeholder="Sua referência (opcional)">
+                            </div>
+                        </div>
+
                         <div class="button">
-                            <input type="submit" value="Se registrar">
+                            <input onclick="button()" type="submit" value="Se registrar">
                         </div>
                     </form>
                 </div>
+
             </div>
+
         </div>
+
     </div>
     <!-- ############################################ ORLANDO ############################################ -->
 
@@ -169,12 +215,13 @@
     </div>
 </footer>
 
-<script src="./js/code_index.js"></script>
+<script src="./js/code_formulario_NOVO(thiago).js"></script>
 <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 
 
 
 <!-- ############################################ ORLANDO ############################################ -->
+<!-- ################ MCV ############### -->
 <script src="./js/mvc/controllers_formulario_NOVO.js"></script>
 <script src="./js/mvc/views_formulario_NOVO.js"></script>
 <script src="./js/mvc/models_formulario_NOVO.js"></script>

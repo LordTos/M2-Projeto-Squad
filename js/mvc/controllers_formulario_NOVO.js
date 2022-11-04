@@ -1,5 +1,6 @@
 // Identificar elementos do HTML //
 const ele_nome = document.getElementById("nome");
+const ele_sobrenome = document.getElementById("sobrenome");
 const ele_rg = document.getElementById("rg");
 const ele_email = document.getElementById("email");
 const ele_senha = document.getElementById("senha");
@@ -11,6 +12,8 @@ const ele_complemento = document.getElementById("complemento");
 const ele_bairro = document.getElementById("bairro");
 const ele_cidade = document.getElementById("cidade");
 const ele_estado = document.getElementById("estado");
+const ele_referencia = document.getElementById("referencia");
+
 
 // Pegar valor do elemento //
 function pegar_valor(ele) {
@@ -30,6 +33,7 @@ ele_cep.addEventListener('propertychange', cep_alterado);
 
 // Pegar valor inserido no campo "CEP", manter SOMENTE números e imputar novamente //
 function cep_alterado() {
+
     let cep = pegar_valor(ele_cep).replace(/\D/g, '');
     imputar_valor(ele_cep, cep);
 
@@ -45,21 +49,37 @@ function cep_alterado() {
 
 // Registrar dados na fila de espera //
 function button() {
-    if (pegar_valor(ele_nome) == "" || pegar_valor(ele_rg) == "" || pegar_valor(ele_email) == "" || pegar_valor(ele_senha) == "") {
-        alert("Confira os seus dados pessoais");
+    if (pegar_valor(ele_nome) == "" || pegar_valor(ele_sobrenome) == "" || pegar_valor(ele_rg) == "" || pegar_valor(ele_email) == "" || pegar_valor(ele_senha) == ""
+    || pegar_valor(cep) == "" || pegar_valor(numero) == "") {
+        alert("Confira os seus dados");
         return
     }
     if (pegar_valor(ele_senha) != pegar_valor(ele_repetir_senha)) {
         alert("Senhas não conferem")
         return
     }
+    if(document.getElementById('dot-1').checked || document.getElementById('dot-2').checked) {
+        const ele_plano = document.querySelector('input[name="plano"]:checked');
+    } else {
+        alert("Escolha o seu plano")
+        return
+    }
+    if (!!pegar_valor(ele_email).match(/@/) || !!pegar_valor(ele_email).match(/\.com/)) {
+        alert("MARCADO: " + ele_plano.value)
+        reload();
+    } else {
+        alert("Email incorreto! Favor verificar.")
+        return
+    }
+
+
+
 
 alert(`
-${pegar_valor(ele_nome)}
-${pegar_valor(ele_rg)}
-${pegar_valor(ele_email)}
-${pegar_valor(ele_senha)}
-${pegar_valor(ele_repetir_senha)}
+NOME: ${pegar_valor(ele_nome)}
+RG: ${pegar_valor(ele_rg)}
+EMAIL: ${pegar_valor(ele_email)}
+SENHA: ${pegar_valor(ele_senha)}
 `)
 
 }

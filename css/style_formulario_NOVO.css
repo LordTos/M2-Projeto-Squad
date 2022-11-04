@@ -468,54 +468,35 @@ footer {
 
 
 
-/* ################################################################################### */
-
-
-
-
-/* Ajustes do bloco do body */
-.blo_body {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    text-align: center;
-}
-
-
-/* Ajustes do bloco do formulário */
-.blo_form {
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-}
-
+/* ############################################ ORLANDO ############################################ */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 .blo_body {
-    margin: 20px;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .blo_form {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 40px;
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     max-width: 700px;
     width: 100%;
     background-color: #fff;
-    padding: 25px 30px;
+    padding: 25px 35px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
@@ -524,11 +505,10 @@ footer {
     max-width: 700px;
     width: 100%;
     background: #292c35;
-    padding: 25px 30px;
+    padding: 25px 35px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(245, 11, 11, 0.15);
     color: #ffffff;
-    ;
 }
 
 .container .title {
@@ -572,7 +552,7 @@ form .input-box span.details {
     outline: none;
     font-size: 16px;
     border-radius: 5px;
-    padding-left: 15px;
+    text-align: center;
     border: 1px solid #ccc;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
@@ -583,7 +563,7 @@ form .input-box span.details {
     border-color: #9b59b6;
 }
 
-form .gender-details .gender-title {
+form .plano-details .plano-title {
     font-size: 20px;
     font-weight: 500;
 }

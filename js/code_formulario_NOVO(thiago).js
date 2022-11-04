@@ -20,5 +20,9 @@ const chk = document.getElementById('chk')
 chk.addEventListener('change', () => {
   document.body.classList.toggle('dark')
 
+  // ############################################ ORLANDO ############################################ //
+  document.getElementById("container").classList.toggle('dark')
+  // ############################################ ORLANDO ############################################ //
+
 
 });
