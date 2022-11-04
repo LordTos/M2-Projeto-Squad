@@ -1,129 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Coding by Multiwebpress-->
+<html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- ########## formulario.html (Matheus + Orlando) ########## -->
-  <!-- CSS (Matheus + Orlando) -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style_formulario.css">
-
-  <!-- JS (Matheus + Orlando) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-  <title>Entrar para lista de espera</title>
-
+    <!-- ############################################ ORLANDO ############################################ -->
+    <link rel="stylesheet" href="css/style_formulario.css">
+    <!-- ############################################ ORLANDO ############################################ -->
+    <title> DEV : Iniciante </title>
 </head>
 
 <body>
+    <!--MENU-->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo Image">
+            </div>
+            <div class="hamburger">
+                <div class="bars1"></div>
+                <div class="bars2"></div>
+                <div class="bars3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Ferramentas</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Comentários</a></li>
+                <div class="btn-dark">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                <li>
+                    <div class="search-box">
+                        <input type="text" class="search-text" placeholder="Pesquise...">
+                        <a class="search-btn">
+                            <img src="img/loupe-blue.svg" alt="" class="loupe-blue" width="25px" height="25px">
+                            <img src="img/loupe-white.svg" alt="" class="loupe-white" width="25px" height="25px">
+                        </a>
+                    </div>
+                </li>
+                <li><button class="login-button" href="#">Login</button></li>
 
-<br>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="vh-100 bg-image">
 
-    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-      <div class="container h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-            <div class="card" style="border-radius: 15px;">
-              <div class="card-body p-5">
-                <h2 class="text-uppercase text-center mb-5">Lista de espera</h2>
+    <!-- ############################################ ORLANDO ############################################ -->
+    <!-- Formulário -->
+    <br><br><br><br><br>
+    <!-- Bloco do body -->
+    <div class="blo_body" id="blo_body">
 
-                <form>
+        <!-- Bloco das informacoes do formulario -->
+        <div class="blo_form" id="blo_form">
 
-                  <div class="form-outline mb-4">
-                    <input placeholder="Seu nome" type="text" id="nome" class="form-control form-control-lg" />
-                  </div>
+            <div class="container" id="container">
 
-                  <div class="form-outline mb-4">
-                    <input placeholder="RG" type="text" id="rg" class="form-control form-control-lg" />
-                  </div>
+                <div class="title">Entrar para lista de espera</div>
+                <div class="content">
+                    <form id="form_id" action="#">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Nome</span>
+                                <input type="text" id="nome" placeholder="Seu nome" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Sobrenome</span>
+                                <input type="text" id="sobrenome" placeholder="Seu sobrenome" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">RG</span>
+                                <input type="text" id="rg" placeholder="Seu RG" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Email</span>
+                                <input type="text" id="email" placeholder="Seu email" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Senha</span>
+                                <input type="password" id="senha" placeholder="Sua senha" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Repetir senha</span>
+                                <input type="password" id="repetir_senha" placeholder="Repetir sua senha" required>
+                            </div>
+                        </div>
 
-                  <div class="form-outline mb-4">
-                    <input placeholder="Seu Email" type="email" id="email" class="form-control form-control-lg" />
-                  </div>
+                        <div class="plano-details_2">
+                            <input type="radio" name="plano" id="dot-1" value="bronze">
+                            <input type="radio" name="plano" id="dot-2" value="ouro">
+                            <h2>Plano</h2>
+                            <div class="category">
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="plano">BRONZE</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="plano">OURO</span>
+                                </label>
+                            </div>
+                        </div>
 
-                  <div class="form-outline mb-4">
-                    <input placeholder="Senha" type="password" id="senha" class="form-control form-control-lg" />
-                  </div>
+                        <div class="plano-details">
+                            <span class="plano-title">Endereço</span>
+                        </div>
 
-                  <div class="form-outline mb-4">
-                    <input placeholder="Repetir a senha" type="repetir_senha" id="form3Example4cdg"
-                      class="form-control form-control-lg" />
-                  </div>
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">CEP</span>
+                                <input type="text" id="cep" placeholder="Seu CEP" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Rua</span>
+                                <input type="text" id="rua" placeholder="Sua rua (automático)" disabled="disabled">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Número</span>
+                                <input type="text" id="numero" placeholder="Seu número" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Complemento</span>
+                                <input type="text" id="complemento" placeholder="Seu complemento (opcional)">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Bairro</span>
+                                <input type="text" id="bairro" placeholder="Seu bairro (automático)"
+                                    disabled="disabled">
+                            </div>
+                            <div class="input-box" id="cidade">
+                                <span class="details">Cidade</span>
+                                <input type="text" placeholder="Sua cidade (automático)" disabled="disabled">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Estado</span>
+                                <input type="text" id="estado" placeholder="Seu estado (automático)"
+                                    disabled="disabled">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Referência</span>
+                                <input type="text" id="referencia" placeholder="Sua referência (opcional)">
+                            </div>
+                        </div>
 
-                  <br>
-                  <br>
-
-                  <div class="form-outline mb-4">
-                    <input placeholder="CEP" type="text" id="cep" class="form-control form-control-lg" />
-                  </div>
-
-                  <div class="form-outline mb-4">
-                    <input placeholder="Rua" type="text" id="rua" class="form-control form-control-lg"
-                      disabled="disabled" />
-                  </div>
-
-                  <div class="form-outline mb-4">
-                    <input placeholder="Número" type="text" id="numero" class="form-control form-control-lg" />
-                  </div>
-
-                  <div class="form-outline mb-4">
-                    <input placeholder="Complemento (opcional)" type="text" id="complemento"
-                      class="form-control form-control-lg" />
-                  </div>
-
-                  <div class="form-outline mb-4">
-                    <input placeholder="Bairro" type="text" id="bairro" class="form-control form-control-lg"
-                      disabled="disabled" />
-                  </div>
-
-                  <div class="form-outline mb-4">
-                    <input placeholder="Cidade" type="text" id="cidade" class="form-control form-control-lg"
-                      disabled="disabled" />
-                  </div>
-
-                  <div class="form-outline mb-4">
-                    <input placeholder="Estado" type="text" id="estado" class="form-control form-control-lg"
-                      disabled="disabled" />
-                  </div>
-
-                  <br>
-
-                  <div class="d-flex justify-content-center">
-                    <button id="close-message  save-btn" type="button submit"
-                      class="btn btn-success btn-block btn-lg gradient-custom-4 text-body btn-primary"
-                      onclick="button()">Entrar para lista</button>
-                  </div>
-
-                  <p class="text-center text-muted mt-5 mb-0">Já tem uma conta? <a href="#!"
-                      class="fw-bold text-body"><u>Login</u></a></p>
-              </div>
-
-              </form>
+                        <div class="button">
+                            <input class="submit" type="submit" value="Se registrar" />
+                        </div>
+                    </form>
+                </div>
 
             </div>
-          </div>
+
         </div>
-      </div>
+
     </div>
+    <!-- ############################################ ORLANDO ############################################ -->
+
+
+</body>
+
+</div>
+</div>
+
+
+
+
+
+<!--RODAPÈ-->
+<footer>
+    <div class="container-footer">
+        <div class="row-footer">
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#"> Quem somos </a></li>
+                    <li><a href=""> nossos serviços </a></li>
+                    <li><a href=""> ferramentas </a></li>
+                    <li><a href=""> programa de afiliados</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Se subescreva!</h4>
+                <div class="form-sub">
+                    <form>
+                        <input type="email" placeholder="Digite o seu e-mail" required>
+                        <button>subscrever</button>
+                    </form>
+                </div>
+
+                <div class="medias-socias">
+                    <a href="#"> <i class="fa fa-facebook"></i> </a>
+                    <a href="#"> <i class="fa fa-instagram"></i> </a>
+                    <a href="#"> <i class="fa fa-twitter"></i> </a>
+                    <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                </div>
+
+            </div>
+            <!--end footer col-->
+        </div>
     </div>
-
-  </section>
-
-<br>
+</footer>
 
 
+<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 
-  <!-- JS (Matheus + Orlando) -->
-  <script src="./js/mvc/controllers_formulario.js"></script>
-  <script src="./js/mvc/views_formulario.js"></script>
-  <script src="./js/mvc/models_formulario.js"></script>
 
+
+<!-- ############################################ ORLANDO ############################################ -->
+<!-- ################ JAVASCRIPT (header) ############### -->
+<script src="./js/code_index_e_formulario.js"></script>
+<!-- ################ MCV ############### -->
+<script src="./js/mvc/formulario_controllers.js"></script>
+<script src="./js/mvc/formulario_views.js"></script>
+<script src="./js/mvc/formulario_models.js"></script>
+<!-- ############################################ ORLANDO ############################################ -->
 </body>
 
 </html>

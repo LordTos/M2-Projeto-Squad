@@ -14,6 +14,10 @@ const ele_cidade = document.getElementById("cidade");
 const ele_estado = document.getElementById("estado");
 const ele_referencia = document.getElementById("referencia");
 
+// Impedir refresh da página ao clicar no botão submit //
+var form = document.getElementById("form_id");
+function handleForm(event) { event.preventDefault(); button() }
+form.addEventListener('submit', handleForm);
 
 // Pegar valor do elemento //
 function pegar_valor(ele) {
@@ -47,43 +51,54 @@ function cep_alterado() {
 
 // ########################################################################### // 
 
-// Registrar dados na fila de espera //
+// Butão "Ser egistrar" presionado //
 function button() {
+
+    // Checar se todos os campos foram preenchidos //
     if (pegar_valor(ele_nome) == "" || pegar_valor(ele_sobrenome) == "" || pegar_valor(ele_rg) == "" || pegar_valor(ele_email) == "" || pegar_valor(ele_senha) == ""
-    || pegar_valor(cep) == "" || pegar_valor(numero) == "") {
+        || pegar_valor(cep) == "" || pegar_valor(numero) == "") {
         alert("Confira os seus dados");
         return
     }
+    // Checar se o email tem o "@" e ".com" //
+    if (!pegar_valor(ele_email).match(/@/) || !pegar_valor(ele_email).match(/.com/)) {
+        alert("Email incorreto! Favor verificar.")
+        return
+    }
+    // Checar se a "senha" é igual ao "repetir senha" //
     if (pegar_valor(ele_senha) != pegar_valor(ele_repetir_senha)) {
         alert("Senhas não conferem")
         return
     }
-    if(document.getElementById('dot-1').checked || document.getElementById('dot-2').checked) {
-        const ele_plano = document.querySelector('input[name="plano"]:checked');
+    // Checar se o plano foi selecionado //
+    if (!document.getElementById('dot-1').checked && !document.getElementById('dot-2').checked) {
+        alert("Favor selecionar o plano");
+        return
     } else {
-        alert("Escolha o seu plano")
+        // Caputurar os dados do formulário e mandar para o banco de dados //
+        const ele_plano = document.querySelector('input[name="plano"]:checked').value;
+        alert(`
+        NOME: ${pegar_valor(ele_nome)}
+        SOBRENOME: ${pegar_valor(ele_sobrenome)}
+        RG: ${pegar_valor(ele_rg)}
+        EMAIL: ${pegar_valor(ele_email)}
+        SENHA: ${pegar_valor(ele_senha)}
+        PLANO: ${ele_plano}
+
+        CEP: ${pegar_valor(ele_cep)}
+        RUA: ${pegar_valor(ele_rua)}
+        Nº: ${pegar_valor(ele_numero)}
+        COMP.: ${pegar_valor(ele_complemento)}
+        BAIRRO: ${pegar_valor(ele_bairro)}
+        CIDADE: ${pegar_valor(ele_cidade)}
+        ESTADO: ${pegar_valor(ele_estado)}
+        REF.: ${pegar_valor(ele_referencia)}
+        `)
+        window.location.reload()
         return
     }
-    if (!!pegar_valor(ele_email).match(/@/) || !!pegar_valor(ele_email).match(/\.com/)) {
-        alert("MARCADO: " + ele_plano.value)
-        reload();
-    } else {
-        alert("Email incorreto! Favor verificar.")
-        return
-    }
-
-
-
-
-alert(`
-NOME: ${pegar_valor(ele_nome)}
-RG: ${pegar_valor(ele_rg)}
-EMAIL: ${pegar_valor(ele_email)}
-SENHA: ${pegar_valor(ele_senha)}
-`)
 
 }
-
 
 // ########################################################################### // 
 
