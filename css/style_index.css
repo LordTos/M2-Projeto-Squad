@@ -236,6 +236,8 @@ nav{
 /*CARDS DA CATEGORIAS*/
 .categorias, .ferramentas{
     margin-left: 20%;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .container {
@@ -478,13 +480,13 @@ footer{
 
     /*RESPONSIVO RODAPÉ*/
     @media (max-width: 800px) {
-        .footer-col{
+        .footer-col,.categorias, .ferramentas{
             width: 50%;
             margin-bottom: 30px;
         }
     }
     @media (max-width:600px) {
-        .footer-col{
+        .footer-col, .categorias, .ferramentas{
             width: 100%;
         }
     }
