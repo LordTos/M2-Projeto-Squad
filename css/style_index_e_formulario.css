@@ -492,11 +492,6 @@ footer {
     flex-direction: column;
 }
 
-input::placeholder{
-    color:red
-  }
-
-
 
 
 .container {
@@ -563,11 +558,13 @@ form .input-box span.details {
     border: 1px solid #ccc;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
+    background-color: rgb(255, 255, 255);
 }
 
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
-    border-color: #9b59b6;
+    border-color: #ccc;
+    background-color: rgb(255, 255, 255);
 }
 
 form .plano-details .plano-title {
