@@ -74,6 +74,7 @@
     background-image: linear-gradient(to right, transparent, #CCC, transparent);  
   }
 
+
   @media (max-width: 800px) {
     body, .categoria, .conthtml,.contcss,.contjs,.contferr{
         width: 50%;
