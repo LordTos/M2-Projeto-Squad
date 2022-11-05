@@ -14,7 +14,7 @@
     <title> DEV : Iniciante </title>
 </head>
 
-<body>
+<body onload="checar_modo_escuro()">
     <!--MENU-->
     <header>
         <nav>
@@ -34,9 +34,9 @@
                 <div class="btn-dark">
                     <input type="checkbox" class="checkbox" id="chk" />
                     <label class="label" for="chk">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                        <div class="ball"></div>
+                        <i id="fas fa-moo" class="fas fa-moon"></i>
+                        <i id="fas fa-sun" class="fas fa-sun"></i>
+                        <div id="ball" class="ball"></div>
                     </label>
                 </div>
                 <li>
@@ -55,6 +55,8 @@
     </header>
 
 
+
+
     <!-- ############################################ ORLANDO ############################################ -->
     <!-- Formulário -->
     <br><br><br><br><br>
@@ -63,14 +65,16 @@
 
         <!-- Bloco das informacoes do formulario -->
         <div class="blo_form" id="blo_form">
-
             <div class="container" id="container">
-
                 <div class="title">Entrar para lista de espera</div>
                 <div class="content">
-                    <form id="form_id" action="#">
+
+                    <!-- Bloco formulário -->
+                    <form id="form_id" class="form_id" action="#">
                         <div class="user-details">
                             <div class="input-box">
+
+                                <!-- Dados pessoas (nome, rg, email, senha) -->
                                 <span class="details">Nome</span>
                                 <input type="text" id="nome" placeholder="Seu nome" required>
                             </div>
@@ -96,6 +100,7 @@
                             </div>
                         </div>
 
+                        <!-- Seleção do plano (bronze ou ouro) -->
                         <div class="plano-details_2">
                             <input type="radio" name="plano" id="dot-1" value="bronze">
                             <input type="radio" name="plano" id="dot-2" value="ouro">
@@ -112,6 +117,7 @@
                             </div>
                         </div>
 
+                        <!-- CEP e endereço -->
                         <div class="plano-details">
                             <span class="plano-title">Endereço</span>
                         </div>
@@ -153,18 +159,19 @@
                             </div>
                         </div>
 
+                        <!-- Botão "se registrar" -->
                         <div class="button">
                             <input class="submit" type="submit" value="Se registrar" />
                         </div>
+
                     </form>
                 </div>
-
             </div>
-
         </div>
-
     </div>
     <!-- ############################################ ORLANDO ############################################ -->
+
+
 
 
 </body>
@@ -219,6 +226,10 @@
 
 
 
+
+
+
+
 <!-- ############################################ ORLANDO ############################################ -->
 <!-- ################ JAVASCRIPT (header) ############### -->
 <script src="./js/code_index_e_formulario.js"></script>
@@ -228,5 +239,9 @@
 <script src="./js/mvc/formulario_models.js"></script>
 <!-- ############################################ ORLANDO ############################################ -->
 </body>
+
+
+
+
 
 </html>

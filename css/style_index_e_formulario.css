@@ -492,6 +492,13 @@ footer {
     flex-direction: column;
 }
 
+input::placeholder{
+    color:red
+  }
+
+
+
+
 .container {
     max-width: 700px;
     width: 100%;
