@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style_index.css" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -17,7 +20,9 @@
     <header>
         <nav>
             <div class="logo">
+                <a href="#index.html">
                 <img src="./img/logo.png" alt="Logo Image">
+                </a>
             </div>
             <div class="hamburger">
                 <div class="bars1"></div>
@@ -25,8 +30,8 @@
                 <div class="bars3"></div>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Ferramentas</a></li>
+                <li><a href="#categoria">Categorias</a></li>
+                <li><a href="#ferramentas">Ferramentas</a></li>
                 <li><a href="#">Planos</a></li>
                 <li><a href="#">Comentários</a></li>
                 <div class="btn-dark">
@@ -51,12 +56,10 @@
     </header>
     <!--CONTEUDO DA PAGINA-->
     <section class="conteudo">
-        <div class="img01">
-            <img src="img/01.jpg" alt="imagem 01">
-        </div>
-        <div>
+    
+        <div class="div-home">
         
-                <h1>DEV: Iniciante</h1>
+                <h1>DEV: Iniciante</h1> <br><br>
                 <h3>DEV:In é um site voltado para iniciantes desenvolvedores de páginas web!</h3>
                 <p>Aqui você encontrará conteúdos de HTML, CSS e Java Script de maneira mais fácil e obejtiva! <br> Videos aulas, tutoriais, arquivos e além de ferramentas que todo desenvolvedor web precisa saber.</p>
                 <p>Dev.In foi consebida por 5 amigos desenvolvedores que viram no curso que aprender a aprender é nescessário.
@@ -122,7 +125,7 @@
     </section>
     <br>
     <hr class="hr4"> <br>
-    <section class="ferramentas">
+    <section class="ferramentas" id="ferramentas">
         <h1>Ferramentas</h1>
     <div class="container">
         <div class="card">

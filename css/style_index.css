@@ -223,8 +223,30 @@ nav{
 .conteudo{
     padding-top: 150px;
     padding-left: 50px;
+    background-image: linear-gradient(to right, #8a2be2, #b537f2, #3cb9fc);
     
-    
+}
+
+.div-home{
+    text-align: center;
+    height: 700px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.div-home h1{ /*FORMATANDO A HOME DEV: INICIANTE*/
+    font-size: 72px;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    color: white; text-shadow: #120052 0.1em 0.1em 0.2em;
+    letter-spacing: 10px;
+}
+
+.div-home h3{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.div-home p{
+    font-size: 28px;
 }
 
 .hr4 {
@@ -235,9 +257,11 @@ nav{
 
 /*CARDS DA CATEGORIAS*/
 .categorias, .ferramentas{
-    margin-left: 20%;
+    margin-left: 10%;
     flex-wrap: wrap;
     display: flex;
+    padding-top: 150px; /*TESTE ESPAÇO ENTRE DIVIS E MENU APAGAR DEPOIS*/
+
 }
 
 .container {
