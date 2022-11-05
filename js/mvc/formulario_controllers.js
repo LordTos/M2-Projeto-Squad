@@ -15,7 +15,7 @@ const ele_estado = document.getElementById("estado");
 const ele_referencia = document.getElementById("referencia");
 
 // Impedir refresh da página ao clicar no botão submit //
-var form = document.getElementById("form_id");
+let form = document.getElementById("form_id");
 function handleForm(event) { event.preventDefault(); button() }
 form.addEventListener('submit', handleForm);
 
@@ -106,13 +106,13 @@ function button() {
 
 function consultar_cep(api_cep) {
     let url = 'https://viacep.com.br/ws/' + api_cep + '/json';
-    var request = new XMLHttpRequest();
+    let request = new XMLHttpRequest();
     request.open('GET', url);
     request.onerror = function (e) {
         alert("API OFFLINE ou CEP INVÁLIDO")
     }
     request.onload = () => {
-        var response = JSON.parse(request.responseText)
+        let response = JSON.parse(request.responseText)
         if (response.erro === true) {
             alert("CEP NÃO ENCONTRADO");
         } else {
