@@ -255,7 +255,7 @@ nav{
     background-image: linear-gradient(to right, transparent, #CCC, transparent);  
   }
 
-/*CARDS DA CATEGORIAS*/
+/*CARDS DA CATEGORIAS PAGINA HOME*/
 .categorias, .ferramentas{
     margin-left: 10%;
     flex-wrap: wrap;

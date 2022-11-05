@@ -1,0 +1,7 @@
+/*PAGINA DE CATEGORIAS*/
+.categoria{    
+    margin-left: 10%;
+    flex-wrap: wrap;
+    display: flex;
+    padding-top: 150px; 
+}
