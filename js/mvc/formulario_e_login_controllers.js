@@ -38,21 +38,20 @@ function imputar_valor(ele, valor) {
 
 function login() {
 
-    if (!pegar_valor(ele_email_login).match(/@/) || !pegar_valor(ele_email_login).match(/.com/)) {
-        alert("Email incorreto! Favor verificar.");
-        return
-    }
+    if (!pegar_valor(ele_email_login) == "") {
 
-    if (!pegar_valor(ele_senha_login) == "") {
-        window.location.reload();
-        alert("Acesso liberado!");
-        return
-    }
-    else {
-        alert("Preencha a sua senha");
-        return
-    }
+        if (!pegar_valor(ele_email_login).match(/@/) || !pegar_valor(ele_email_login).match(/.com/)) {
+            alert("Email incorreto! Favor verificar.");
+            return
+        }
 
+        if (!pegar_valor(ele_senha_login) == "") {
+            window.location.reload();
+            alert("Acesso liberado!");
+            return
+        }
+
+    }
 }
 
 
@@ -64,13 +63,16 @@ function redefinir_senha(inf) {
     }
     else {
 
-        if (!pegar_valor(ele_email_recuperar_senha).match(/@/) || !pegar_valor(ele_email_recuperar_senha).match(/.com/)) {
-            alert("Email incorreto! Favor verificar.");
+        if (!pegar_valor(ele_email_recuperar_senha) == "") {
+
+            if (!pegar_valor(ele_email_recuperar_senha).match(/@/) || !pegar_valor(ele_email_recuperar_senha).match(/.com/)) {
+                alert("Email incorreto! Favor verificar.");
+                return
+            }
+            window.location.reload();
+            alert("Link de redefinição enviado com sucesso!");
             return
         }
-        window.location.reload();
-        alert("Link de redefinição enviado com sucesso!");
-        return
     }
 }
 
