@@ -13,6 +13,7 @@ hamburger.addEventListener('click', ()=>{
     hamburger.classList.toggle("toggle");
 });
 
+//Botão Dark Theme
 const chk = document.getElementById('chk')
 
 chk.addEventListener('change', () => {

@@ -34,28 +34,7 @@
     border-color: #dc2e69;
 }
 /*CONTEUDO DA PAGINA CATEGORIAS*/
-.conthtml{
-    
-    background-color: orangered;
-}
 
-.contcss{
-    height: 500px;
-    width: 500px;
-    background-color: blue;
-}
-
-.contjs{
-    height: 500px;
-    width: 500px;
-    background-color: yellow;
-}
-
-.contferr{
-    height: 500px;
-    width: 500px;
-    background-color: greenyellow;
-}
 
 .conthtml,.contcss,.contjs,.contferr{ /*<--MARGEM DA ESQUERDA DO CONTEUDO*/
     margin-left: 150px;
