@@ -207,6 +207,15 @@ nav {
     transition: all ease-in-out 350ms;
 }
 
+
+.login-button_novo:hover {
+    color: #fff;
+    background-color: #dd5f24;
+    border: 1.5px solid #dd5f24;
+    transition: all ease-in-out 350ms;
+}
+
+
 /*Navigation Icon Styling*/
 
 .hamburger div {
