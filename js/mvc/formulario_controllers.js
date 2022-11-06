@@ -75,13 +75,21 @@ function button() {
         alert("Favor selecionar o plano");
         return
     } else {
-        // Caputurar os dados do formulário e mandar para o banco de dados //
+        // Identificar plano selecionado //
         const ele_plano = document.querySelector('input[name="plano"]:checked').value;
 
-        banco_de_dados(pegar_valor(ele_nome), pegar_valor(ele_sobrenome), pegar_valor(ele_rg), pegar_valor(ele_email), pegar_valor(ele_senha), ele_plano, 
-        pegar_valor(ele_cep), pegar_valor(ele_rua), pegar_valor(ele_numero), pegar_valor(ele_complemento), pegar_valor(ele_bairro), pegar_valor(ele_cidade), 
-        pegar_valor(ele_estado), pegar_valor(ele_referencia));
+        // Registrar hora em que a informação foi imputada //
+        let data_hora = dayjs()
+        let data_hora_1 = data_hora.format("YYYY-MM-DDTHH:mm:ss");
+        let data_hora_2 = data_hora.format("DD/MM - HH:mm:ss");
 
+        // Enviar informações do formulário e data/hora para o banco de dados //
+        banco_de_dados(data_hora_1, data_hora_2, pegar_valor(ele_nome), pegar_valor(ele_sobrenome), pegar_valor(ele_rg),
+            pegar_valor(ele_email), pegar_valor(ele_senha), ele_plano, pegar_valor(ele_cep), pegar_valor(ele_rua),
+            pegar_valor(ele_numero), pegar_valor(ele_complemento), pegar_valor(ele_bairro), pegar_valor(ele_cidade),
+            pegar_valor(ele_estado), pegar_valor(ele_referencia));
+
+        // Atualizar página (para zerar o formulário) //
         window.location.reload();
         return
     }
