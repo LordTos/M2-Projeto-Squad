@@ -46,6 +46,8 @@
   font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
+    background: linear-gradient(to right, #8a2be2, #b537f2, #3cb9fc);
+    border-radius: 20px 20px 0px 0px;
 }
 
 .hr1 {
