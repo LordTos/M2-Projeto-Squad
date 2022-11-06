@@ -343,12 +343,6 @@ footer {
     background-color: white;
 }
 
-
-.formulario a {
-    color: #9b59b6;
-    }
-
-
 /*Responsive Adding Media Queries*/
 
 @media screen and (max-width: 800px) {
@@ -546,7 +540,7 @@ footer {
 
 form .user-details .input-box {
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
+    width: 100%;
 }
 
 form .input-box span.details {
@@ -636,6 +630,11 @@ form .button input {
 form .button input:hover {
     /* transform: scale(0.99); */
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+
+.login a {
+color: #9b59b6;
 }
 
 @media(max-width: 584px) {

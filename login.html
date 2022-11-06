@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- ############################################ ORLANDO ############################################ -->
-    <link rel="stylesheet" href="css/style_index_e_formulario.css">
+    <link rel="stylesheet" href="css/style_index_e_login.css">
     <!-- ############################################ ORLANDO ############################################ -->
     <title> DEV : Iniciante </title>
 </head>
@@ -59,7 +59,7 @@
 
     <!-- ############################################ ORLANDO ############################################ -->
     <!-- Formulário -->
-    <br><br><br><br><br>
+    <br><br><br><br>
     <!-- Bloco do body -->
     <div class="blo_body" id="blo_body">
 
@@ -71,34 +71,58 @@
 
                     <!-- Bloco formulário -->
                     <form id="form_id" class="form_id" action="#">
-                        <div class="user-details">
-                            <div class="input-box">
 
-                                <!-- Dados pessoas (email, senha) -->
-                                <span class="details">Email</span>
-                                <input type="text" id="email" placeholder="Seu email" required>
+                        <!-- Bloco formulário Login -->
+                        <div id="bloco_1" class="bloco_1">
+                            <div class="user-details">
+                                <div class="input-box">
+
+                                    <!-- Email e senha -->
+                                    <span class="details">Email</span>
+                                    <input type="text" id="email_login" placeholder="Seu email" required>
+
+                                    <span class="details">Senha</span>
+                                    <input type="password" id="senha_login" placeholder="Sua senha" required>
+                                </div>
                             </div>
-                            <div class="input-box">
-                                <span class="details">Senha</span>
-                                <input type="text" id="senha" placeholder="Sua senha" required>
+
+                            <!-- Botão "Login" -->
+                            <div class="button">
+                                <input onclick="login()" class="submit" type="submit" value="Login" />
                             </div>
-                        
+
+                            <!-- Link "redefinir senha" -->
+                            <div class="login">
+                                <a href="#" onclick="redefinir_senha(`mostrar_form`)">ESQUECI MINHA SENHA</a>
+                            </div>
                         </div>
 
 
-                        <!-- CEP e endereço -->
 
-                        <div class="user-details">
+                        <!-- Bloco formulário Redefinir senha -->
+                        <div id="bloco_2" class="bloco_2">
+                            <div class="user-details">
+                                <div class="input-box">
 
-                
+                                    <!-- Email -->
+                                    <span class="details">Email</span>
+                                    <input type="text" id="email_recuperar_senha" placeholder="Seu email" required>
+                                </div>
+                            </div>
+
+                            <!-- Botão "Reccuperar senha" -->
+                            <div class="button">
+                                <input onclick="redefinir_senha(`validar_email`)" class=" submit" type="submit"
+                                    value="Recuperar senha" />
+                            </div>
+
                         </div>
 
-                        <!-- Botão "se registrar" -->
-                        <div class="button">
-                            <input class="submit" type="submit" value="Login" />
-                        </div>
 
-                        <a href="url">ESQUECI MINHA SENHA</a>
+
+
+
+
 
                     </form>
                 </div>
@@ -168,13 +192,13 @@
 
 <!-- ############################################ ORLANDO ############################################ -->
 <!-- ################ JAVASCRIPT (header) ############### -->
-<script src="./js/code_index_e_formulario.js"></script>
+<script src="./js/code_index_e_login.js"></script>
 <!-- ################ JAVASCRIPT (pegar data *para a API do bloco de notas) ############### -->
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 <!-- ################ MCV ############### -->
-<script src="./js/mvc/formulario_controllers.js"></script>
-<script src="./js/mvc/formulario_views.js"></script>
-<script src="./js/mvc/formulario_models.js"></script>
+<script src="./js/mvc/formulario_e_login_controllers.js"></script>
+<script src="./js/mvc/formulario_e_login_views.js"></script>
+<script src="./js/mvc/formulario_e_login_models.js"></script>
 <!-- ############################################ ORLANDO ############################################ -->
 </body>
 

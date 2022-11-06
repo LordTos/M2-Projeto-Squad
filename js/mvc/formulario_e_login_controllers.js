@@ -14,6 +14,11 @@ const ele_cidade = document.getElementById("cidade");
 const ele_estado = document.getElementById("estado");
 const ele_referencia = document.getElementById("referencia");
 
+const ele_email_login = document.getElementById("email_login");
+const ele_senha_login = document.getElementById("senha_login");
+
+const ele_email_recuperar_senha = document.getElementById("email_recuperar_senha");
+
 // Impedir refresh da página ao clicar no botão submit //
 let form = document.getElementById("form_id");
 function handleForm(event) { event.preventDefault(); button() }
@@ -30,6 +35,44 @@ function imputar_valor(ele, valor) {
 }
 
 // ########################################################################### // 
+
+function login() {
+
+    if (!pegar_valor(ele_email_login).match(/@/) || !pegar_valor(ele_email_login).match(/.com/)) {
+        alert("Email incorreto! Favor verificar.");
+        return
+    }
+
+    if (!pegar_valor(ele_senha_login) == "") {
+        window.location.reload();
+        alert("Acesso liberado!");
+        return
+    }
+    else {
+        alert("Preencha a sua senha");
+        return
+    }
+
+}
+
+
+function redefinir_senha(inf) {
+
+    if (inf == "mostrar_form") {
+        document.getElementById('bloco_1').style.display = 'none'
+        document.getElementById('bloco_2').style.display = 'block'
+    }
+    else {
+
+        if (!pegar_valor(ele_email_recuperar_senha).match(/@/) || !pegar_valor(ele_email_recuperar_senha).match(/.com/)) {
+            alert("Email incorreto! Favor verificar.");
+            return
+        }
+        window.location.reload();
+        alert("Link de redefinição enviado com sucesso!");
+        return
+    }
+}
 
 // Monitor de eventos: acionar quando qualquer edição for feita no CEP (apagando ou escrevendo) //
 ele_cep.addEventListener('input', cep_alterado);
@@ -88,9 +131,6 @@ function button() {
             pegar_valor(ele_email), pegar_valor(ele_senha), ele_plano, pegar_valor(ele_cep), pegar_valor(ele_rua),
             pegar_valor(ele_numero), pegar_valor(ele_complemento), pegar_valor(ele_bairro), pegar_valor(ele_cidade),
             pegar_valor(ele_estado), pegar_valor(ele_referencia));
-
-        // Atualizar página (para zerar o formulário) //
-        window.location.reload();
         return
     }
 
