@@ -60,6 +60,7 @@ function redefinir_senha(inf) {
     if (inf == "mostrar_form") {
         document.getElementById('bloco_1').style.display = 'none'
         document.getElementById('bloco_2').style.display = 'block'
+        document.getElementById("title").innerHTML = "Redefinir senha";
     }
     else {
 
