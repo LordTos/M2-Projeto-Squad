@@ -1,5 +1,4 @@
 // Animar o scroll até o alvo
-
 const menuItems = document.querySelectorAll('.nav-links a[href^="#"]');
 
 function getScrollTopByHref(element) {
