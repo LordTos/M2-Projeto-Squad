@@ -77,24 +77,12 @@ function button() {
     } else {
         // Caputurar os dados do formulário e mandar para o banco de dados //
         const ele_plano = document.querySelector('input[name="plano"]:checked').value;
-        alert(`
-        NOME: ${pegar_valor(ele_nome)}
-        SOBRENOME: ${pegar_valor(ele_sobrenome)}
-        RG: ${pegar_valor(ele_rg)}
-        EMAIL: ${pegar_valor(ele_email)}
-        SENHA: ${pegar_valor(ele_senha)}
-        PLANO: ${ele_plano}
 
-        CEP: ${pegar_valor(ele_cep)}
-        RUA: ${pegar_valor(ele_rua)}
-        Nº: ${pegar_valor(ele_numero)}
-        COMP.: ${pegar_valor(ele_complemento)}
-        BAIRRO: ${pegar_valor(ele_bairro)}
-        CIDADE: ${pegar_valor(ele_cidade)}
-        ESTADO: ${pegar_valor(ele_estado)}
-        REF.: ${pegar_valor(ele_referencia)}
-        `)
-        window.location.reload()
+        banco_de_dados(pegar_valor(ele_nome), pegar_valor(ele_sobrenome), pegar_valor(ele_rg), pegar_valor(ele_email), pegar_valor(ele_senha), ele_plano, 
+        pegar_valor(ele_cep), pegar_valor(ele_rua), pegar_valor(ele_numero), pegar_valor(ele_complemento), pegar_valor(ele_bairro), pegar_valor(ele_cidade), 
+        pegar_valor(ele_estado), pegar_valor(ele_referencia));
+
+        window.location.reload();
         return
     }
 
