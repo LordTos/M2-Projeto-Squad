@@ -1,26 +1,3 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
-
-hamburger.addEventListener('click', ()=>{
-   //Links
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
-
-    //Animation
-    hamburger.classList.toggle("toggle");
-});
-
-//Botão Dark Theme
-const chk = document.getElementById('chk')
-
-chk.addEventListener('change', () => {
-  document.body.classList.toggle('dark')
-});
-
-
 // Animar o scroll até o alvo
 
 const menuItems = document.querySelectorAll('.nav-links a[href^="#"]');
