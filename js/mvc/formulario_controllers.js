@@ -116,10 +116,10 @@ function consultar_cep(api_cep) {
         if (response.erro === true) {
             alert("CEP NÃO ENCONTRADO");
         } else {
-            imputar_valor(ele_rua, response.logradouro)
-            imputar_valor(ele_bairro, response.bairro)
-            imputar_valor(ele_cidade, response.localidade)
-            imputar_valor(ele_estado, response.uf)
+            imputar_valor(ele_rua, response.logradouro);
+            imputar_valor(ele_bairro, response.bairro);
+            imputar_valor(ele_cidade, response.localidade);
+            imputar_valor(ele_estado, response.uf);
         }
     }
     request.send();

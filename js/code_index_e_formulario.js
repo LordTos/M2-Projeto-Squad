@@ -29,7 +29,6 @@ chk.addEventListener('change', () => {
 
 
 
-
 // ############################################ ORLANDO ############################################ //
 
 // Checar se a página começou ou completou o carregamento // 
