@@ -79,14 +79,14 @@ nav{
 /* Styling Logo*/
 
 .logo{
-    padding: 3vh 3vw;
+    padding: 0vh 3vw;
     text-align: left;
     width: 20vw;
 }
 
 .logo img{
     height: auto;
-    width: 4rem;
+    width: 14rem;
 }
 
 /* Styling Navigation Links*/
