@@ -60,6 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
   
   .card {
@@ -147,13 +148,13 @@
   }
 
   @media (max-width: 800px) {
-    body, .categoria, .conthtml,.contcss,.contjs,.contferr{
+    body, .categoria, .conthtml,.contcss,.contjs,.contferr,.row{
         width: 50%;
         margin-bottom: 30px;
     }
 }
 @media (max-width:600px) {
-    body, .categorias, .conthtml,.contcss,.contjs,.contferr{
+    body, .categorias, .conthtml,.contcss,.contjs,.contferr,.row{
         width: 100%;
     }
 }
