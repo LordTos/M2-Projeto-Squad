@@ -167,6 +167,7 @@ function consultar_cep(api_cep) {
     request.onload = () => {
         let response = JSON.parse(request.responseText)
         if (response.erro === true) {
+
             alert("CEP NÃO ENCONTRADO");
             return 
         } else {
