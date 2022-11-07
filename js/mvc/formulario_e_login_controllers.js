@@ -1,3 +1,6 @@
+
+
+
 // Identificar elementos do HTML //
 
 
@@ -21,8 +24,8 @@ const ele_senha_login = document.getElementById("senha_login");
 
 const ele_email_recuperar_senha = document.getElementById("email_recuperar_senha");
 
-if (location.pathname.match(/login/)){
-document.getElementById('bloco_2').style.display = 'none'
+if (location.pathname.match(/login/)) {
+    document.getElementById('bloco_2').style.display = 'none'
 }
 
 
@@ -102,6 +105,7 @@ function cep_alterado() {
         consultar_cep(pegar_valor(ele_cep))
         imputar_valor(ele_cep, cep_ok)
     }
+
 }
 
 // ########################################################################### // 
@@ -157,12 +161,14 @@ function consultar_cep(api_cep) {
     let request = new XMLHttpRequest();
     request.open('GET', url);
     request.onerror = function (e) {
-        alert("API OFFLINE ou CEP INVÁLIDO")
+        alert("API OFFLINE ou CEP INVÁLIDO");
+        return
     }
     request.onload = () => {
         let response = JSON.parse(request.responseText)
         if (response.erro === true) {
             alert("CEP NÃO ENCONTRADO");
+            return 
         } else {
             imputar_valor(ele_rua, response.logradouro);
             imputar_valor(ele_bairro, response.bairro);
