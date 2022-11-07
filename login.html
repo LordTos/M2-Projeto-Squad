@@ -11,17 +11,19 @@
     <!-- ############################################ ORLANDO ############################################ -->
     <link rel="stylesheet" href="css/style_login.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- CHAT-->
+    <link rel="stylesheet" href="./css/style_chat.css">
     <!-- ############################################ ORLANDO ############################################ -->
     <title> DEV : Iniciante | Acesso</title>
 </head>
 
 <body>
-      <!--MENU-->
-      <header>
+    <!--MENU-->
+    <header>
         <nav>
             <div class="logo">
                 <a href="index.html">
-                <img src="img/logo001.png" alt="Logo Image">
+                    <img src="img/logo001.png" alt="Logo Image">
                 </a>
             </div>
             <div class="hamburger">
@@ -30,26 +32,28 @@
                 <div class="bars3"></div>
             </div>
             <ul class="nav-links">
-                <li><a href="#categoria">Categorias</a></li>
-                <li><a href="#ferramentas">Ferramentas</a></li>
-                <li><a href="planos.html">Planos</a></li>
+                <li><a href="./categorias.html">Categorias</a></li>
+                <li><a href="./categorias.html">Ferramentas</a></li>
+                <li><a href="./planos.html">Planos</a></li>
                 <div class="btn-dark">
                     <input type="checkbox" class="checkbox" id="chk" />
                     <label class="label" for="chk">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                    <div class="ball" id="ball"></div>
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball" id="ball"></div>
                     </label>
                 </div>
-                <li><div class="search-box">
-                    <input type="text" class="search-text" placeholder="Pesquise...">
-                    <a class="search-btn">
-                        <img src="img/loupe-blue.svg" alt="" class="loupe-blue" width="25px" height="25px">
-                        <img src="img/loupe-white.svg" alt="" class="loupe-white" width="25px" height="25px">
-                    </a>
-                </div></li>
+                <li>
+                    <div class="search-box">
+                        <input type="text" class="search-text" placeholder="Pesquise...">
+                        <a class="search-btn">
+                            <img src="img/loupe-blue.svg" alt="" class="loupe-blue" width="25px" height="25px">
+                            <img src="img/loupe-white.svg" alt="" class="loupe-white" width="25px" height="25px">
+                        </a>
+                    </div>
+                </li>
                 <li><a class="login-button" href="./login.html">Login</a></li>
-                
+
             </ul>
         </nav>
     </header>
@@ -140,17 +144,33 @@
 
                         </div>
 
-
-
-
-
-
-
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!-- CHAT -->
+    <div class="chat">
+        <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i
+                class="fa fa-commenting-o comment"></i>
+            <i class="fa fa-close close"></i> </label>
+        <div class="wrapper">
+            <div class="chat_header">
+                <h4 class="chat_h6">Suporte</h4>
+            </div>
+            <div class="text-center p-2">
+                <h5 class="chat_h6">Por favor, faça login</h5>
+            </div>
+            <div class="chat-form_chat"> <input type="text" class="form-control" placeholder="Email"> <input
+                    type="password" class="form-control" placeholder="Senha"> <input class="botao_chat" type="submit"
+                    value="Acessar" />
+            </div>
+        </div>
+    </div>
+    <!-- CHAT-->
+
     <!-- ############################################ ORLANDO ############################################ -->
 
 
