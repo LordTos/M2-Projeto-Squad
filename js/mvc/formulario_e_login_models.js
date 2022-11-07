@@ -17,6 +17,7 @@ function download(filename, text) {
 function banco_de_dados(data_hora_1, data_hora_2, nome, sobrenome, rg, email, senha, plano, cep, rua, numero, complemento, bairro, cidade, estado, referencia) {
 
   // Atualizar página (para zerar o formulário) //
+  alert("Cadastro feito com sucesso!");
   window.location.reload();
 
   // Make a POST request with a JSON payload.

@@ -1,4 +1,6 @@
 // Identificar elementos do HTML //
+
+
 const ele_nome = document.getElementById("nome");
 const ele_sobrenome = document.getElementById("sobrenome");
 const ele_rg = document.getElementById("rg");
@@ -18,6 +20,12 @@ const ele_email_login = document.getElementById("email_login");
 const ele_senha_login = document.getElementById("senha_login");
 
 const ele_email_recuperar_senha = document.getElementById("email_recuperar_senha");
+
+if (location.pathname.match(/login/)){
+document.getElementById('bloco_2').style.display = 'none'
+}
+
+
 
 // Impedir refresh da página ao clicar no botão submit //
 let form = document.getElementById("form_id");
@@ -83,6 +91,7 @@ ele_cep.addEventListener('propertychange', cep_alterado);
 
 // Pegar valor inserido no campo "CEP", manter SOMENTE números e imputar novamente //
 function cep_alterado() {
+
 
     let cep = pegar_valor(ele_cep).replace(/\D/g, '');
     imputar_valor(ele_cep, cep);
