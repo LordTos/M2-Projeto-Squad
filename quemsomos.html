@@ -16,7 +16,9 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="./img/logo.png" alt="Logo Image">
+                <a href="index.html">
+                    <img src="img/logo001.png" alt="Logo Image">
+                    </a>
             </div>
             <div class="hamburger">
                 <div class="bars1"></div>
@@ -24,16 +26,15 @@
                 <div class="bars3"></div>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Ferramentas</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Comentários</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="categorias.html">Ferramentas</a></li>
+                <li><a href="planos.html">Planos</a></li>
                 <div class="btn-dark">
                     <input type="checkbox" class="checkbox" id="chk" />
                     <label class="label" for="chk">
                     <i class="fas fa-moon"></i>
                     <i class="fas fa-sun"></i>
-                    <div class="ball"></div>
+                    <div class="ball" id="ball"></div>
                     </label>
                 </div>
                 <li><div class="search-box">
@@ -43,7 +44,7 @@
                         <img src="img/loupe-white.svg" alt="" class="loupe-white" width="25px" height="25px">
                     </a>
                 </div></li>
-                <li><button class="login-button" href="#">Login</button></li>
+                <li><a class="login-button" href="./login.html">Login</a></li>
                 
             </ul>
         </nav>
@@ -153,10 +154,10 @@
                 <div class="footer-col">
                     <h4>Empresa</h4>
                     <ul>
-                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href="quemsomos.html"> Quem somos </a></li>
                         <li><a href=""> nossos serviços </a></li>
-                        <li><a href=""> ferramentas </a></li>
-                        <li><a href=""> programa de afiliados</a></li>
+                        <li><a href="categorias.html"> ferramentas </a></li>
+                        <li><a href="planos.html"> programa de afiliados</a></li>
                     </ul>
                 </div>
                 <!--end footer col-->
@@ -184,6 +185,7 @@
     </footer>
     
 <script src="./js/code_index.js"></script>
+<script src="js/code_modo_escuro.js"></script>
 <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 
