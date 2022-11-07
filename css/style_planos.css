@@ -141,6 +141,7 @@ img {padding-top: 15px;
    border-radius: 15px;
    box-shadow: 2px 5px 15px black;
    transition: transform 0.3s;
+   background: linear-gradient(135deg, #ee20d6 0% , #0a2fb6 100%);
 }
  .container .card:hover{
 transform: scale(1.050);
@@ -177,10 +178,9 @@ transform: scale(1.050);
 }
 .container .card .card-content button {
     width: 120px;
-    padding: 10px 20px;
     background: rgb(10, 10, 10);
     color: #000000;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 10px;
     outline: none;
     border: none;
