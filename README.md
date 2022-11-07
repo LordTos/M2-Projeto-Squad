@@ -30,3 +30,10 @@ Fênix Squad!! ...
 
 **Obs: A Dev: Iniciante é uma empresa ficticia, todo o conteudo do site não nos pertence. Todos os Direitos aos seus devidos donos.
 **Fenix Squad reintera que vocês vão nos legitimos domos e acompanhe-os.
+
+
+slide de apresentação:
+
+
+https://github.com/LordTos/M2-Projeto-Squad/files/9951750/OFICIAL.pptx
+
