@@ -251,25 +251,38 @@
 
 
 
-<!-- ############################################ ORLANDO ############################################ -->
+  <!-- ############################################ ORLANDO ############################################ -->
 
-    <!-- CHAT -->
-    <div class="chat">
-      <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i
-              class="fa fa-commenting-o comment"></i>
-          <i class="fa fa-close close"></i> </label>
-      <div class="wrapper">
-          <div class="chat_header">
-              <h4 class="chat_h6">Suporte</h4>
-          </div>
-          <div class="text-center p-2">
-              <h5 class="chat_h6">Por favor, faça login</h5>
-          </div>
-          <div class="chat-form_chat"> <input type="text" class="form-control" placeholder="Email"> <input
-                  type="password" class="form-control" placeholder="Senha"> <input class="botao_chat" type="submit"
-                  value="Acessar" />
-          </div>
+
+  <!-- LIBRAS -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- LIBRAS -->
+
+
+  <!-- CHAT -->
+  <div class="chat">
+    <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i class="fa fa-commenting-o comment"></i>
+      <i class="fa fa-close close"></i> </label>
+    <div class="wrapper">
+      <div class="chat_header">
+        <h4 class="chat_h6">Suporte</h4>
       </div>
+      <div class="text-center p-2">
+        <h5 class="chat_h6">Por favor, faça login</h5>
+      </div>
+      <div class="chat-form_chat"> <input type="text" class="form-control" placeholder="Email"> <input type="password"
+          class="form-control" placeholder="Senha"> <input class="botao_chat" type="submit" value="Acessar" />
+      </div>
+    </div>
   </div>
   <!-- CHAT-->
 
