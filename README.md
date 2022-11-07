@@ -2,6 +2,8 @@
 
 ##Trabalho em Grupo pelo SENAC/Resilia
 
+## https://lordtos.github.io/M2-Projeto-Squad/
+
 ### Pessoa Co-falitadora : Orlando Santana
 ### Pessoa Gestora de Conhecimento : Douglas Silva
 ### Pessoa Gestora de Gente : Karen
